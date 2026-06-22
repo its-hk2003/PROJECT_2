@@ -1,0 +1,50 @@
+Install virtual Environment
+
+pip Install virtualenv
+
+Now we will create our virtual Environment
+
+python -m venv myenv
+
+Now, we will activate  our virtual environment
+myenv\Scripts\activate
+
+____
+What is our goal?
+
+Application -----> works as a chatGpt -----> 
+We have to create a function which will take a querry as input and send it to LLM
+(google-generative) and then create response and return the response in textual format.
+
+So, first of all we have to create a requirements.txt file in which we have all the packages or libraries that we need to run this application.
+
+streamlit ------>  For UI, we will use this python library
+google-generativeai -------> this is our LLM(Large Language Model)
+python-dotenv ------> This is use for pass or import our secret credentials from .env file
+to another file.
+
+Now we will create a file (.env) ----> Have all the secrets here 
+
+API key -----> Application Programming Interface which works client to server as a mediator.
+
+Go to browser -----> Search (Makersuite API Key) ----> Click 'Google Studio' -----> 
+Click on 'Create Api Key' ----> paste it into .env file
+
+Now, we will create a app.py file in which we will have our all logics to create this application.
+
+For run the application, open the terminal and write 
+
+streamlit run app.py
+
+
+When you run your application then send this code to github repo .
+We will create a file (.gitignore) ---> myenv, .env
+
+open the terminal and write 
+git init
+git add .
+git status
+git commit -m "added"
+git branch -M main
+git remote add origin https://github.com/github_user_name/repo_name.git
+git push -u origin main
